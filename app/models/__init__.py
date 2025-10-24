@@ -114,7 +114,6 @@ class Department(Base):
     parent = relationship("Department", remote_side=[id])
     children = relationship("Department", back_populates="parent")
     manager = relationship("Employee", foreign_keys=[manager_id])
-    employees = relationship("Employee", back_populates="department")
 
 
 class User(Base):
@@ -163,7 +162,7 @@ class Employee(Base):
     
     # Связи
     company = relationship("Company", back_populates="employees")
-    department = relationship("Department", back_populates="employees")
+    department = relationship("Department", foreign_keys=[department_id])
     user = relationship("User", back_populates="employee")
     
     # Задачи
