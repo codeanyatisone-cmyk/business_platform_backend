@@ -172,3 +172,4 @@ async def delete_password(
 ):
     """Удаление пароля"""
     return {"message": "Password deleted successfully"}
+

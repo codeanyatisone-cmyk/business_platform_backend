@@ -70,3 +70,4 @@ def downgrade() -> None:
     # Удаляем поле role из employees
     op.drop_column('employees', 'role')
 
+

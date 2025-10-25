@@ -241,3 +241,4 @@ class MinIOService:
 # Глобальный экземпляр сервиса
 minio_service = MinIOService()
 
+

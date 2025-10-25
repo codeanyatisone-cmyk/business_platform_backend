@@ -454,3 +454,4 @@ async def get_company_invitations(
             detail=f"Error fetching company invitations: {str(e)}"
         )
 
+

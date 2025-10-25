@@ -50,3 +50,4 @@ class CompanyInvitation(Base):
     invited_by = relationship("User", foreign_keys=[invited_by_id])
     user = relationship("User", foreign_keys=[user_id])
 
+

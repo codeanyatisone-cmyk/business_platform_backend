@@ -337,3 +337,4 @@ class EmailService:
         except Exception as e:
             raise Exception(f"Failed to mark email as read: {str(e)}")
 
+

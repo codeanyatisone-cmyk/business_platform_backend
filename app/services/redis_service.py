@@ -163,3 +163,4 @@ class RedisService:
 # Глобальный экземпляр сервиса
 redis_service = RedisService()
 
+
